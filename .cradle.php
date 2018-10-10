@@ -17,7 +17,7 @@ $cradle->on('csrf-load', function (Request $request, Response $response) {
     }
 
     $request->setSession('csrf', $key);
-    $response->setStage('csrf', $key);
+    $response->setResults('csrf', $key);
 });
 
 /**
